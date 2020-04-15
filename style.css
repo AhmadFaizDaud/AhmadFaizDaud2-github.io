@@ -1,0 +1,171 @@
+/*------- Global ----*/
+*{
+    margin:0;
+    padding:0;
+  }
+  
+  /*--- Scroll Bars ---*/
+  
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #474745;
+    border-radius:3rem;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+  
+  /*------- End Global ----*/
+  
+  /*------- Navigation ----*/
+  .content{
+    display:flex;
+  }
+  
+  #navbar{
+    position:fixed;
+  /*   border:2px red solid; */
+    width:25%;
+    height:100vh;
+    overflow-y: scroll;
+    text-align: center;
+     font-family: 'Girassol', cursive;
+   font-size: 1.3rem;
+   letter-spacing:0.05rem;
+  /*  border: 2px solid grey; */
+    
+  background-color:#e8ad09;
+  }
+  
+  #navbar header{
+    
+    display:block;
+    text-align:center;
+    margin:5vh auto;
+  }
+  
+  #navbar li{
+      font-size:1rem;
+      margin: 0 auto;
+      padding:0;
+      list-style:none;
+      border:1px red solid;
+      
+  }
+  
+  #navbar a{
+    color:black;
+    display:block;
+    margin:auto;
+  /*   background-color:yellow; */
+    text-decoration:none;
+    text-align:center;
+    padding:0.5rem;
+    border:1px red solid;
+  }
+  
+  
+  /*------- End Navigation ----*/
+  
+  /*------- Main Doc ----*/
+  
+  
+  #main-doc{
+  /*   border:2px red solid; */
+    margin:0 auto 0 25%;
+    width:80%; 
+    font-family: 'Roboto', sans-serif;
+    color:#313233;
+    font-size: 1.2rem;
+    letter-spacing:0.03rem;
+  /*   border:2px red solid; */
+  }
+  
+  #main-doc{
+   background: #ECE9E6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   
+  }
+  
+  #main-doc *{
+    display:block;
+  /*   border: 1px solid green; */
+  }
+  
+  #main-doc section{
+    margin:10vh auto;
+  /*   border:2px red solid; */
+  }
+  #main-doc header{
+    margin:auto;
+    width:50%;
+  }
+  .main-section header{
+    color:black;
+    text-align:center;
+  }
+  
+  .main-section h1{
+    text-decoration:underline;
+    margin: 3vh auto;
+  }
+  
+  .main-section p{
+    margin: 3vh auto;
+    width: 80%;
+  }
+  
+  .main-section ul{
+    margin: 1vh auto;
+    border: 2px red solid;;
+    width: 50%;
+  }
+  
+  .main-section li{
+      color:red;
+    list-style:bold;
+    list-style-type: square;
+  }
+  
+  .main-section code{
+    margin: 3vh auto;
+    text-align:center;
+    background-color:yellow;
+    width: 60%;
+  }
+  
+  /*------- End Main Doc ----*/
+  
+  /*------- Media Query ----*/
+  
+  @media only screen and (max-width: 600px){
+    .content{
+      flex-direction:column;
+    }
+    
+    #navbar{
+      width:100%;
+      height:20vh;
+    }
+    
+    #main-doc{
+      width:100%;
+      margin:20vh 0 0 0;
+    }
+  }
+  
+  /*------- End Media Query ----*/
+  
